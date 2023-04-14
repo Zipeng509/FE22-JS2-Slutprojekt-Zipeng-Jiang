@@ -3,8 +3,8 @@ import { signOut } from "./signout";
 
 const postContainerElement = document.getElementById("posts-container");
 const signOutBtnElement = document.getElementById("sign-out-btn");
-
 const usernameElement = document.getElementById("username-element");
+
 if (!usernameElement) {
   throw new Error("No element was found with id of username-element");
 }

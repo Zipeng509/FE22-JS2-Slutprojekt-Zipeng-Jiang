@@ -21,6 +21,8 @@ if (!usernameInputElement) {
 if (!passwordInputElement) {
   throw new Error("No input element was found with id of 'password'");
 }
+
+
 signInBtn.addEventListener("click", () => {
   const username = usernameInputElement.value;
   const password = passwordInputElement.value;
@@ -33,8 +35,6 @@ signInBtn.addEventListener("click", () => {
     alert("Please fill in your password")
     return;
   }
-
-  //Om användare inte finns
 
   signIn(username, password, () => {
     localStorage.setItem("signedInUser", username)
