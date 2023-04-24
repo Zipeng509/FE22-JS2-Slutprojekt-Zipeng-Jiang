@@ -1,1 +1,0 @@
-{"mappings":"AAAA;;;;AAIA","sources":["src/style/homepage.css"],"sourcesContent":[".card{\n    width: 26rem;\n}\n\n#delete-btn{\n    margin-right: 8px;\n}"],"names":[],"version":3,"file":"homepage.9492def1.css.map","sourceRoot":"/__parcel_source_root/"}
