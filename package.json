@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "npx parcel index.html src/html/homepage.html src/html/signup.html src/html/createpost.html src/html/otherusers.html src/html/otherusersprofile.html"
+    "dev": "npx parcel index.html src/html/*.html",
+    "clean": ""
   },
   "author": "",
   "license": "ISC",

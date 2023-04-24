@@ -103,11 +103,12 @@ async function createPost(name: string, post: Post): Promise<void> {
 //Ta emot andra användares inlägg
 async function getUserPost(name: string): Promise<Post[]> {
   const snapshot = await get(ref(database, "post/" + name));
-  if (!snapshot.exists) {
+  if (!snapshot.exists()) {
     throw new Error("User post not found");
   }
 
   const userPost: Post[] = Object.values(snapshot.val() || {});
+  console.log(snapshot.val());
   return userPost
     .map((post) => ({ ...post, createdAt: new Date(post.createdAt) }))
     .sort((a, b) => {

@@ -84,6 +84,7 @@ signUpBtn.addEventListener("click", async (event) => {
     password,
     imgChoose,
     () => {
+      localStorage.setItem("signedInUser", username)
       open("http://localhost:1234/src/html/homepage.html", "_self");
     },
     () => {
