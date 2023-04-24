@@ -104,7 +104,7 @@ async function createPost(name: string, post: Post): Promise<void> {
 async function getUserPost(name: string): Promise<Post[]> {
   const snapshot = await get(ref(database, "post/" + name));
   if (!snapshot.exists()) {
-    throw new Error("User post not found");
+    return []
   }
 
   const userPost: Post[] = Object.values(snapshot.val() || {});
