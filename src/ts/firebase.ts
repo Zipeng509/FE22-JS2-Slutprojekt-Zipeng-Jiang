@@ -60,7 +60,7 @@ async function removeUser(name: string): Promise<void> {
 //Får alla användare
 async function getAllUsers(): Promise<User[]> {
   const snapshot = await get(ref(database, "users/"));
-  if (!snapshot.exists) {
+  if (!snapshot.exists()) {
     throw new Error("All users not found");
   }
   const allUsersPost = snapshot.val();
@@ -74,7 +74,7 @@ async function signIn(
   callback: () => void
 ): Promise<void> {
   const snapshot = await get(ref(database, "users/" + name));
-  if (!snapshot.exists) {
+  if (!snapshot.exists()) {
     throw new Error("Username not found");
   }
 
