@@ -1,0 +1,1 @@
+{"mappings":"ACAA,kBAIA","sources":["homepage.a5ae3cc0.css","src/homepage.css"],"sourcesContent":[".card {\n  width: 26rem;\n}\n\n#delete-btn {\n  margin-right: 8px;\n}\n\n/*# sourceMappingURL=homepage.a5ae3cc0.css.map */\n",".card{\n    width: 26rem;\n}\n\n#delete-btn{\n    margin-right: 8px;\n}"],"names":[],"version":3,"file":"homepage.a5ae3cc0.css.map"}
